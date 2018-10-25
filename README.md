@@ -50,4 +50,4 @@ $$ language plpgsql;
 2. Опасность переполнения счётчика транзакций.
 3. Блокировки.
 
-Пробробнее см. (Are Long Running Transactions Bad?)[https://www.simononsoftware.com/are-long-running-transactions-bad/]
+Пробробнее см. [Are Long Running Transactions Bad?](https://www.simononsoftware.com/are-long-running-transactions-bad/)
