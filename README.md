@@ -20,6 +20,17 @@
 2. [pgAdmin-III](https://www.pgadmin.org/docs/pgadmin3/1.22/)
 3. [pgAdmin 4](https://www.pgadmin.org/)
 
+#### Чем мониторить PostgreSQL?
+
+##### Онлайн сервисы для мониторинга
+
+1. [okmeter.io](https://okmeter.io/) - предоставляет довольно подробную статистику, но платный и требует создания специального пользователя в БД и запуска демона, который отвечает за отправку статистики на сервис.
+
+##### Локальные утилиты
+
+1. [PASH-Viewer](https://github.com/dbacvetkov/PASH-Viewer) - аналог ораклового Top Activity, написан на Java
+2. [pg_activity](https://github.com/julmon/pg_activity) - консольное приложение (ncurses-based) для мониторинга текущих сессий в PostgreSQL
+
 #### Как мне вставить в таблицу 1 миллиард записей? Быстро.
 
 Вставка данных будет происходить быстрее, если на таблице отсутствуют индексы и внешние ключи. Для того, чтобы загрузить данные в таблицу из файла, можно воспользоваться командой [COPY](https://www.postgresql.org/docs/current/static/sql-copy.html). Если данные нужно сгенерировать "на лету", можно использовать функцию [generate_series](https://www.postgresql.org/docs/current/static/functions-srf.html). Например:
