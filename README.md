@@ -28,7 +28,7 @@
 
 ##### Локальные утилиты
 
-1. [PASH-Viewer](https://github.com/dbacvetkov/PASH-Viewer) - аналог ораклового Top Activity, написан на Java
+1. [PASH-Viewer](https://github.com/dbacvetkov/PASH-Viewer) - аналог ораклового Top Activity, написан на Java, см. [Мониторим активные сессии PostgreSQL 10, как в Oracle](https://habr.com/post/413411/)
 2. [pg_activity](https://github.com/julmon/pg_activity) - консольное приложение (ncurses-based) для мониторинга текущих сессий в PostgreSQL
 
 #### Как мне вставить в таблицу 1 миллиард записей? Быстро.
