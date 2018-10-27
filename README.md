@@ -1,5 +1,7 @@
 # PostgreSQL Frequently Asked Qestions
 
+English version is [here](README-en.md)
+
 Этот FAQ основан на вопросах, заданных в Telegram-канале https://t.me/pgsql и ответах на них.
 
 ## Блокировки
