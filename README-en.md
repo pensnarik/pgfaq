@@ -63,3 +63,23 @@ $$ language plpgsql;
 3. Locks.
 
 See [Are Long Running Transactions Bad?](https://www.simononsoftware.com/are-long-running-transactions-bad/) for defailed explanation.
+
+## Administration
+
+#### Why PostgreSQL does not delete WAL files from pg_xlog?
+
+There are several reasons why files might not been deleted:
+
+1. There is a replication slot at a WAL location older than the WAL files, you can check it with this query:
+
+```sql
+SELECT slot_name,
+       lpad((pg_control_checkpoint()).timeline_id::text, 8, '0') ||
+       lpad(split_part(restart_lsn::text, '/', 1), 8, '0') ||
+       lpad(substr(split_part(restart_lsn::text, '/', 2), 1, 2), 8, '0')
+       AS wal_file
+FROM pg_replication_slots;
+```
+
+2. WAL archiving is enabled and `archive_command` fails. Please, check PostgreSQL logs in this case.
+3. `wal_keep_segments` is set higer than the number of WAL files in `pg_xlog`

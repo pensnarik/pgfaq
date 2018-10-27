@@ -65,3 +65,21 @@ $$ language plpgsql;
 3. Блокировки.
 
 Подробнее см. [Are Long Running Transactions Bad?](https://www.simononsoftware.com/are-long-running-transactions-bad/)
+
+## Администрирование
+
+#### Почему не удаляются сегменты WAL из pg_xlog?
+
+1. Есть слот репликации, который препятствует удалению WAL файлов, проверить это можно следующим запросом:
+
+```sql
+SELECT slot_name,
+       lpad((pg_control_checkpoint()).timeline_id::text, 8, '0') ||
+       lpad(split_part(restart_lsn::text, '/', 1), 8, '0') ||
+       lpad(substr(split_part(restart_lsn::text, '/', 2), 1, 2), 8, '0')
+       AS wal_file
+FROM pg_replication_slots;
+```
+
+2. Включено архивирование WAL, но команда `archive_command` не отрабатывает коректно (см. логи)
+3. Количество файлов в `pg_xlog` ещё не превысило значение параметра `wal_keep_segments`
