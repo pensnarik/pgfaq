@@ -1,7 +1,5 @@
 # PostgreSQL Frequently Asked Qestions
 
-English version is [here](README-en.md)
-
 This FAQ is based on the questions and answers from [pgsql](https://t.me/pgsql) Telegram channgel.
 
 ## Locks
