@@ -28,6 +28,7 @@ English version is [here](README-en.md)
 
 1. [okmeter.io](https://okmeter.io/) - предоставляет довольно подробную статистику, но платный и требует создания специального пользователя в БД и запуска демона, который отвечает за отправку статистики на сервис.
 2. [vividcortex.com](https://www.vividcortex.com/) - похожий по набору функций сервис, кроме PostgreSQL поддерживает Redis, MongoDB и MySQL.
+3. [OpsDash](https://www.opsdash.com/) - ещё один онлайн серсис для мониторинга.
 
 ##### Локальные утилиты
 

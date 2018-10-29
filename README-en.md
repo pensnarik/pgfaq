@@ -26,6 +26,7 @@ The main point is deadlock should always be handled on the application side and 
 
 1. [okmeter.io](https://okmeter.io/) - provides detailed statistics but requires proprietary daemon to be run on your server.
 2. [vividcortex.com](https://www.vividcortex.com/) - similar to the previous one but also supports Redis, MongoDB и MySQL.
+3. [OpsDash](https://www.opsdash.com/) - another one PostgreSQL online monitoring service
 
 ##### Local tools
 
