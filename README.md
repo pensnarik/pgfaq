@@ -65,7 +65,7 @@ $$ language plpgsql;
 2. Опасность переполнения счётчика транзакций.
 3. Блокировки.
 
-Подробнее см. [Are Long Running Transactions Bad?](https://www.simononsoftware.com/are-long-running-transactions-bad/)
+Подробнее см. [Are Long Running Transactions Bad?](https://www.simononsoftware.com/are-long-running-transactions-bad/) и [Why avoid long transactions?](https://blog.dataegret.com/2018/12/why-avoid-long-transaction.html?m=1).
 
 ## Администрирование
 

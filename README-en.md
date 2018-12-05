@@ -63,7 +63,7 @@ $$ language plpgsql;
 2. Transaction number wraparound
 3. Locks.
 
-See [Are Long Running Transactions Bad?](https://www.simononsoftware.com/are-long-running-transactions-bad/) for defailed explanation.
+See [Are Long Running Transactions Bad?](https://www.simononsoftware.com/are-long-running-transactions-bad/) and [Why avoid long transactions?](https://blog.dataegret.com/2018/12/why-avoid-long-transaction.html?m=1) for defailed explanation.
 
 ## Administration
 
