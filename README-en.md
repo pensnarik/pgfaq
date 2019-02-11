@@ -84,3 +84,4 @@ FROM pg_replication_slots;
 
 2. WAL archiving is enabled and `archive_command` fails. Please, check PostgreSQL logs in this case.
 3. `wal_keep_segments` is set higer than the number of WAL files in `pg_xlog`
+4. There was not `checkpoint` for a long time (due to some error, etc)
