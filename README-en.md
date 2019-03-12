@@ -12,6 +12,14 @@ The main point is deadlock should always be handled on the application side and 
 2. Different transactions should update data in the same order. In this case deadlock is impossible.
 3. Application should lock all the rows going to be updated before updating them.
 
+#### What is virtualxid?
+
+`virtualxid` is a virtual transaction counter that comprise backend id and backend local `xid` (for instance, "2/19").
+`virtualxid` is allocated for transaction that haven't update any rows in the database therefore there is not need
+to store transaction's `xid` in `xmin` and `xmax` system columns. This is to avoid wraparound of the system-wide
+32-bit transaction ID. As soon as transaction updates any data in the database the real `xid` will be
+allocated for this transaction (you can also call `txid_current()` function to force `xid` allocation).
+
 ## Working with database
 
 #### What are the tools to work with PostgreSQL?
