@@ -36,7 +36,7 @@ virtualxid это "виртуальный" идентификатор транз
 
 1. [okmeter.io](https://okmeter.io/) - предоставляет довольно подробную статистику, но платный и требует создания специального пользователя в БД и запуска демона, который отвечает за отправку статистики на сервис.
 2. [vividcortex.com](https://www.vividcortex.com/) - похожий по набору функций сервис, кроме PostgreSQL поддерживает Redis, MongoDB и MySQL.
-3. [OpsDash](https://www.opsdash.com/) - ещё один онлайн серсис для мониторинга.
+3. [OpsDash](https://www.opsdash.com/) - ещё один онлайн сервис для мониторинга.
 4. [pgwatch2](https://github.com/cybertec-postgresql/pgwatch2) - гибкое Open-Source решения для мониторинга PostgreSQL
 
 ##### Локальные утилиты
