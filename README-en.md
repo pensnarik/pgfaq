@@ -35,11 +35,13 @@ allocated for this transaction (you can also call `txid_current()` function to f
 1. [okmeter.io](https://okmeter.io/) - provides detailed statistics but requires proprietary daemon to be run on your server.
 2. [vividcortex.com](https://www.vividcortex.com/) - similar to the previous one but also supports Redis, MongoDB и MySQL.
 3. [OpsDash](https://www.opsdash.com/) - another one PostgreSQL online monitoring service
+4. [pgwatch2](https://github.com/cybertec-postgresql/pgwatch2) - flexible self-contained PostgreSQL metrics monitoring/dashboarding solution
 
 ##### Local tools
 
 1. [PASH-Viewer](https://github.com/dbacvetkov/PASH-Viewer) - Oracle's Top Activity analog written in Java, for futher information see. [Monitoring PostgreSQL active sessions, the Oracle-way (in Russian)](https://habr.com/post/413411/)
 2. [pg_activity](https://github.com/julmon/pg_activity) - ncurse-based application for active session monitoring.
+3. [pg_top](https://github.com/markwkm/pg_top) - 'top' for PostgreSQL
 
 #### How do very fast inserts with PostgreSQL.
 
